@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+[id="reg"] {
+  border: 1px solid red;
+  padding: 0rem 2rem;
+}

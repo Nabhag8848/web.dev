@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>layout</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <style contenteditable>
+      style {
+        color: inherit;
+        display: block;
+        border: 1px solid;
+        font: inherit;
+        font-family: monospace;
+        padding: 1em;
+        border-radius: 1em;
+        white-space: pre;
+      }
+    </style>
+    <header>
+      <h1>Theme Selector & Tab Index</h1>
+    </header>
+    <form>
+      <label for="theme-selector"></label>
+      <input
+        type="color"
+        alt="background-color-selector"
+        id="theme-selector"
+        tabindex="-1"
+      />
+    </form>
+
+    <blockquote data-testid="testing" id="quote">
+      Rome wasn't build in a day !
+    </blockquote>
+
+    <input type="text" tabindex="0" value="0" />
+    <input type="text" tabindex="1" value="1" />
+    <input type="text" tabindex="2" value="0" />
+    <input type="text" tabindex="2" value="2" />
+    <input type="text" tabindex="0" value="0" />
+    <input type="text" tabindex="-1" value="-1" />
+    <input type="text" tabindex="3" value="3" />
+    <input type="text" tabindex="0" value="0" />
+    <input type="text" tabindex="4" value="4" />
+    <input type="text" tabindex="0" value="0" />
+
+    <script defer type="module" src="./script.js"></script>
+  </body>
+</html>
