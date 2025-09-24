@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Navigation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <body>
+    <nav aria-label="breadcrumbs">
+      <ol role="list">
+        <li>
+          <a href="/">web.dev</a>
+        </li>
+        <li>
+          <a href="/learn"> learn </a>
+        </li>
+        <li>
+          <a href="/learn/html">HTML</a>
+        </li>
+        <li aria-current="page">Navigation</li>
+      </ol>
+    </nav>
+    <h1>Navigation</h1>
+    <nav aria-labelledby="tocTitle">
+      <p id="tocTitle">On this page</p>
+      <ul role="list">
+        <li>
+          <a href="#skip">Skip to content link</a>
+        </li>
+        <li>
+          <a href="#toc">Table of contents</a>
+        </li>
+        <li>
+          <a href="#bc">Page breadcrumbs</a>
+        </li>
+        <li>
+          <a href="#ln">Local navigation</a>
+        </li>
+        <li>
+          <a href="#global">Global navigation</a>
+        </li>
+      </ul>
+
+      <!-- <li>
+        <a
+          aria-current="page"
+          aria-selected="true" // when on side bar the current link is selected :)
+          href="/learn/html/navigation"
+        >
+          Navigation
+        </a>
+      </li> -->
+    </nav>
+    <main></main>
+    <footer></footer>
+    <script defer type="module" src="./script.js"></script>
+  </body>
+</html>

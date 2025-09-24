@@ -1,0 +1,19 @@
+/* * {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+} */
+
+[aria-label^="breadcrumbs" i] li + li::before {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 8px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  rotate: 45deg;
+  opacity: 0.8;
+}
