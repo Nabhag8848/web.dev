@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Anchor Links Basics</title>
+    <link rel="stylesheet" src="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Contact</li>
+          <li>About Us</li>
+          <li><a href="#links">Target within Page</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="links">
+        <a href="https://www.google.com">open google</a> <br />
+        <a href="http://localhost:8080/links#links" target="new-tab"
+          >open in new tab with target link fragment</a
+        ><br />
+        <a
+          href="mailto:example@gmail.com?subject=hello from link&body= yo yo
+        yo"
+        >
+          mail to</a
+        >
+        <a href="tel:+917984450754">call to xyz</a>
+        <a
+          href="blob:https://github.com/user-attachments/assets/e489eeb3-d701-437f-bc72-0cc787f9fb37
+          "
+          download="video.mov"
+          >download</a
+        >
+        <a
+          href="https://nabhag.dev"
+          ping="https://webhook.site/ef7d0e81-ea87-4a49-9b30-7d52e1e417b1"
+          >click</a
+        >
+      </section>
+    </main>
+    <aside></aside>
+    <footer></footer>
+    <script defer type="module" src="./script.js"></script>
+  </body>
+</html>
