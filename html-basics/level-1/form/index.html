@@ -1,0 +1,233 @@
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Forms</h1>
+    </header>
+    <main>
+      <section id="ways-for-submit">
+        <p>ways of submit button</p>
+        <!-- <dialog> -->
+        <form id="formid" method="get">
+          <!-- novalidate is alternative to formnovalidate on button -->
+          <input type="submit" value="Submit Form" />
+          <input type="reset" value="reset-form" />
+
+          <!-- <button name="form-btn" type="submit" formmethod="dialog" formnovalidate formtarget="_blank" formenctype="">Submit Form</button> -->
+        </form>
+        <input type="checkbox" name="checkbox" form="formid" />
+        <!-- </dialog> -->
+      </section>
+
+      <section id="picker">
+        <form method="post">
+          <label for="student">pick a student:</label>
+          <select id="student" name="student">
+            <option value="nabhag">Nabhag</option>
+            <option value="narhari">Narhari</option>
+            <option value="mohan">Mohan</option>
+            <option value="ansuya">Ansuya</option>
+          </select>
+          <input type="checkbox" name="checkbox" />
+
+          <input type="submit" value="submit-form" />
+          <input type="reset" value="reset-form" />
+        </form>
+      </section>
+
+      <section id="qa">
+        <fieldset>
+          <legend>Who is your favorite student ?</legend>
+          <ul>
+            <li>
+              <label>
+                <input type="radio" value="blenden" name="student" required />
+                Blenden Smooth
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" value="hoover" name="student" />
+                Hoover Sukhdeep
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" value="toasty" name="student" />
+                Toasty McToastface
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </section>
+
+      <section id="qa">
+        <fieldset disabled>
+          <legend>Who is your favorite student ?</legend>
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" value="blenden" name="student" />
+                Blenden Smooth
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" value="hoover" name="student" />
+                Hoover Sukhdeep
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" value="toasty" name="student" />
+                Toasty McToastface
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </section>
+
+      <section id="form-controls">
+        <fieldset>
+          <legend>All Form Controls</legend>
+          <ul>
+            <li>
+              <label>
+                <input type="button" value="button" />
+                button
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" />
+                checkbox
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="color" />
+                Color
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="date" />
+                Date
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="datetime" />
+                Date Time
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="datetime-local" />
+                Date Time local
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="email" required />
+                Email
+              </label>
+            </li>
+            <li>
+              <label>
+                <input
+                  type="file"
+                  accept="image/*, video/*, audio/*, .gif"
+                  capture="user"
+                />
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="hidden" />
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="month" />
+                Month
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="number" step="10" />
+                Number
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="password" />
+                Password
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" />
+                Radio
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="range" />
+                Range
+              </label>
+            </li>
+            <li>
+              <label>
+                Search
+                <input type="search" />
+              </label>
+            </li>
+            <li>
+              <label>
+                Tel
+                <input type="Tel" pattern="^\+?[0-9]{7,15}$" />
+              </label>
+            </li>
+            <li>
+              <label>
+                Text
+                <input type="text" />
+              </label>
+            </li>
+            <li>
+              <label>
+                Time
+                <input type="time" />
+              </label>
+            </li>
+            <li>
+              <label>
+                URL
+                <input type="url" />
+              </label>
+            </li>
+
+            <li>
+              <label>
+                Week
+                <input type="week" />
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </section>
+
+      <section id="styling-hooks">
+        <label for="example">text input</label>
+        <input type="text" id="example" name="key" />
+      </section>
+    </main>
+    <footer></footer>
+    <script type="module" src="./script.js" defer></script>
+  </body>
+</html>

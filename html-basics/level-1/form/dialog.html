@@ -1,0 +1,56 @@
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dialog</title>
+    <link rel="stylesheet" href="./dialog-styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dialog</h1>
+    </header>
+    <main>
+      <dialog open aria-labelledby="dialogid">
+        <form autocomplete="off">
+          <button
+            aria-label="close"
+            type="submit"
+            formmethod="dialog"
+            formnovalidate
+          >
+            X
+          </button>
+          <h2 id="dialogid">Application</h2>
+          <p>All fields are required</p>
+          <p><label>Name: <input type=text" name="name" required/></label></p>
+          <p>
+            <label
+              >Warranty:
+              <input
+                type="number"
+                name="warranty"
+                step="1"
+                min="0"
+                max="10"
+                required
+            /></label>
+          </p>
+          <p>
+            <label
+              >Power source:
+              <select name="powersource">
+                <option>AC/DC</option>
+                <option>Battery</option>
+                <option>Solar</option>
+              </select></label
+            >
+          </p>
+          <p>
+            <button type="submit" formmethod="get">Submit</button>
+          </p>
+        </form>
+      </dialog>
+    </main>
+    <footer></footer>
+    <script type="module" src="./script.js" defer></script>
+  </body>
+</html>

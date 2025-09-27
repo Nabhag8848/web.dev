@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: pink;
+  font-family: "Courier New", Courier, monospace;
+}
+
+dialog {
+  width: 25vw;
+}
+
+[aria-label="close"] {
+  float: right;
+  appearance: none;
+  border-radius: 25%;
+  margin: -1rem 0;
+}
+
+p {
+  margin-top: 1em;
+}
+
+h2 + p {
+  margin-top: -1em;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}

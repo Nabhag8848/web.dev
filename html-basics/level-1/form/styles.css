@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+  line-height: 2.5;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  border-radius: 20%;
+  border: 0.25em solid #000;
+}
+
+input[type="checkbox"]:focus {
+  background: blueviolet;
+  border-color: white;
+  box-shadow: 0 0 0 3px black;
+}
+
+input[type="checkbox"]:checked {
+  background: green;
+  border-color: white;
+  box-shadow: 0 0 0 3px black;
+}
+
+input[type="radio"] {
+  appearance: none;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  border: 0.25em solid #000;
+}
+
+[type="radio"]:focus {
+  background: lightgreen;
+  border-color: white;
+  box-shadow: 0 0 0 3px black;
+}
+
+[type="radio"]:checked {
+  background: blue;
+  border-color: white;
+  box-shadow: 0 0 0 3px black;
+}
+
+fieldset {
+  border: 2px solid #000;
+  padding: 2em;
+  border-radius: 0.5em;
+}
+
+legend {
+  color: #fff;
+  background: #000;
+  padding: 0.25em 1em;
+  border-radius: 1em;
+}
