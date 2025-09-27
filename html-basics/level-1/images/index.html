@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Images</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <body>
+    <header>
+      <h1>Images</h1>
+    </header>
+    <main>
+      <section id="images">
+        <img
+          src="https://picsum.photos/400/400"
+          alt="Random Images"
+          srcset="
+            https://picsum.photos/400/400 400w,
+            https://picsum.photos/800/800 800w
+          "
+          sizes="(max-width: 800px) 400px, 800px"
+          decoding="async"
+        />
+      </section>
+      <section id="picture">
+        <picture>
+          <source
+            srcset="https://picsum.photos/400/400"
+            media="(max-width: 800px)"
+          />
+          <source srcset="https://picsum.photos/800/800" />
+          <img
+            src="https://picsum.photos/400/400"
+            alt="random image"
+            decoding="async"
+          />
+        </picture>
+      </section>
+
+      <section id="images">
+        <img
+          src="https://picsum.photos/400/400"
+          alt="Random Images"
+          srcset="
+            https://picsum.photos/400/400 400w,
+            https://picsum.photos/800/800 800w
+          "
+          sizes="(max-width: 800px) 400px, 800px"
+          onload="console.log('immediately')"
+          decoding="async"
+        />
+      </section>
+      <section id="picture" style="margin-top: 1000px">
+        <picture>
+          <source
+            srcset="https://picsum.photos/500/500"
+            media="(max-width: 800px)"
+          />
+          <source srcset="https://picsum.photos/500/500" />
+          <img
+            src="https://picsum.photos/1000/1000"
+            alt="random image"
+            loading="lazy"
+            onload="console.log(this)"
+            decoding="async"
+            fetchpriority="low"
+          />
+          />
+        </picture>
+      </section>
+
+      <form method="get">
+        <input type="image" ismap src="https://picsum.photos/1000/1000" />
+      </form>
+    </main>
+    <footer></footer>
+    <script defer type="module" src="./script.js"></script>
+  </body>
+</html>
