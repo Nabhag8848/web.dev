@@ -1,0 +1,67 @@
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Audio and Video</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Audio and Video</h1>
+    </header>
+    <main>
+      <section id="video">
+        <video
+          id="idOfVideo"
+          src="video.mov"
+          poster="https://picsum.photos/500/500"
+          height="500"
+          width="500"
+          controls
+        >
+          <p>Watch <a href="https://youtube.com/link">video on Youtube</a></p>
+        </video>
+        <video
+          poster="https://picsum.photos/500/500"
+          controls
+          height="500"
+          width="500"
+        >
+          <source src="video.mov" type="video/mp4" />
+          <track
+            label="English"
+            kind="subtitles"
+            srclang="en"
+            src="subtitles-en.vtt"
+            default
+          />
+        </video>
+      </section>
+
+      <section id="muted-autoplaying-looping-video-background">
+        <video
+          playsinline
+          loop
+          muted
+          autoplay
+          poster="https://picsum.photos/1000/1000"
+          role="none"
+          height="500"
+          width="1000"
+        >
+          <source src="video.mov" type="video/mp4" />
+        </video>
+      </section>
+
+      <button
+        id="playPause"
+        aria-controls="idOfVideo"
+        data-pause-text="Pause video"
+        data-play-text="Play video"
+      >
+        Pause Video
+      </button>
+    </main>
+    <footer></footer>
+    <script type="module" src="./script.js" defer></script>
+  </body>
+</html>
