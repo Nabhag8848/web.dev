@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+rating {
+  display: inline-flex;
+}
+
+input[type="radio"] {
+  appearance: none;
+  margin: 0;
+  box-shadow: none;
+}
+
+input[type="radio"]::after {
+  content: "\2605";
+  font-size: 32px;
+}
+
+rating:hover input[type="radio"]:invalid::after,
+rating:focus-within input[type="radio"]:invalid::after {
+  color: #888;
+}
+
+rating:hover input[type="radio"]:hover ~ input[type="radio"]:invalid::after,
+rating input[type="radio"]:focus ~ input[type="radio"]:invalid::after {
+  color: #ddd;
+}
+
+rating input[type="radio"]:valid {
+  color: orange;
+}
+
+rating input[type="radio"]:checked ~ input[type="radio"]:not(:checked)::after {
+  color: #ccc;
+  content: "\2606";
+}
+
+star-rating::part(fieldsetPart)::after {
+  content: " - this matches `star-rating::part(fieldsetPart)`";
+}
+
+:where(star-rating) {
+  margin-bottom: 0;
+  display: block;
+}
