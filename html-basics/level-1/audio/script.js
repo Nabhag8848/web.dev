@@ -15,3 +15,14 @@ function playPause() {
 }
 
 document.querySelector("[id=idOfVideo]").removeAttribute("controls");
+
+const allVideos = document.querySelectorAll("video");
+
+allVideos.forEach((video) => {
+  const { duration, ended, currentTime } = video;
+  console.log({
+    duration,
+    ended,
+    currentTime,
+  });
+});
