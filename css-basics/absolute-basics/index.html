@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>CSS Basics</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <body>
+    <header>
+      <h1>Box Model</h1>
+    </header>
+    <main>
+      <section id="attribute-1">
+        <article>
+          <p>be red and larger</p>
+          <p>normal inherit it from parent</p>
+        </article>
+        <div data-type="primary">div one</div>
+        <div data-type="secondary">div two</div>
+      </section>
+
+      <section id="attribute-section">
+        <div class="wrapper">
+          <article class="flow">
+            <h1>Attribute selectors</h1>
+            <figure class="callout">
+              <p>
+                Using an attribute selector that looks for an attribute value
+                that’s suffixed with a pattern (<code>[attr$=value]</code>) is
+                handy for looking for certain file types in a link’s
+                <code>href</code> attribute.
+              </p>
+
+              <p>
+                In this example, we’re using that approach to add an icon for
+                the file type.
+              </p>
+            </figure>
+
+            <h2>Downloads</h2>
+            <ul>
+              <li>
+                <a href="my-image.jpg">An example image</a>
+              </li>
+              <li>
+                <a href="my-document.pdf">An example document</a>
+              </li>
+              <li>
+                <a href="my-document.pdf">Another example document</a>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script defer type="module" src="./script.js"></script>
+  </body>
+</html>
