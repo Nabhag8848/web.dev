@@ -114,3 +114,32 @@ button {
   includes -> position and appreance, specificity, origin, importance.
 
 */
+
+:is(label) {
+  color: rgb(42, 65, 8);
+}
+
+:where(:not(label)) {
+  color: rgb(148, 0, 0);
+}
+
+/*
+ specificity: 
+
+  - selectors gets specificity in form A B C (id-like, class-like (pseudo-class, class, attribute selector), element-like (element & pseudo element) 
+  - selectors gets adds in case of complex and compound selectors
+  - :is & :not doesn't add to sepcificity but its argument does, while also :where argument doesn't even add to specifity. 
+  - if it ties, gets back too order and appreance step by any chance. 
+*/
+
+/*
+  Inheritance: 
+
+  - there are properties like color, font-weight, etc. which gets inherit from parent html element doesn't inherit anything
+  - each declarations gets inherited to its child otherswise if controlled by keyword. 
+  - inherit (inherits from parent), initial (sets back default computed value), unset (inherit, initial), 
+  revert(reverts back styles to different origin - for eg to useragent stylesheet), 
+  revert-layer (similar to revert but reverts to parent layers)
+  - unset can be used with all:unset to unset all the properites. 
+  
+*/
