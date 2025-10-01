@@ -17,21 +17,23 @@
   */
 }
 
-#attribute-1 article p:first-of-type {
-  color: red;
-  font-size: 1.5em;
-}
+#attribute-1 {
+  article p:first-of-type {
+    color: red;
+    font-size: 1.5em;
+  }
 
-#attribute-1 [data-type="primary" i] {
-  /* by default case sensitive 
-  (if want in-sensitive add i)
-  */
-  font-size: 5rem;
-  margin-bottom: 1vh;
-}
+  [data-type="primary" i] {
+    /* by default case sensitive 
+    (if want in-sensitive add i)
+    */
+    font-size: 5rem;
+    margin-bottom: 1vh;
+  }
 
-#attribute-1 [data-type] {
-  border: 2px solid red;
+  [data-type] {
+    border: 2px solid red;
+  }
 }
 
 [href*="document"]::before {
@@ -63,8 +65,10 @@ ul * + * {
   margin-top: 10px;
 }
 
-li > a:hover {
-  color: green;
+li {
+  > a:hover {
+    color: green;
+  }
 }
 
 section#attribute-1 {
@@ -74,3 +78,39 @@ section#attribute-1 {
 section#attribute-section {
   background-color: rgb(151, 173, 151);
 }
+
+#nesting {
+  button {
+    padding: 10px 20px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    background-color: goldenrod;
+    &:hover {
+      color: green;
+      background-color: yellow;
+      transform: translateY(1px);
+    }
+  }
+}
+
+button {
+  /*lower specificity*/
+  background-color: black;
+}
+
+/*
+  you can nest at-rules - media, supports, layer, container
+  ampersand is required in compound selectors. 
+  ampersand represets parent selector.
+  specificity of child selectors depends on parent selector. 
+*/
+
+/* 
+  cascade -> algo for solving styles conflict when defined multiple
+  includes -> position and appreance, specificity, origin, importance.
+
+*/
