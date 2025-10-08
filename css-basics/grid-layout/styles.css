@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+:root {
+  --var-col: 200px;
+}
+
+html {
+  margin: 0 auto;
+}
+
+.container {
+  font-size: 4.2rem;
+  min-height: 300px;
+  max-width: 50vw;
+  display: grid;
+  grid-template-columns: repeat(3, var(--var-col, auto));
+  grid-template-rows: 6.4rem 1fr;
+  gap: 1rem;
+  grid-auto-flow: column;
+}
+
+.container1 {
+  font-size: 4.2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--var-col, 200px), 1fr));
+  gap: 1rem;
+}
+
+.container2 {
+  font-size: 4.2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--var-col, 200px), 1fr));
+  gap: 1rem;
+}
+
+.container > .item {
+  background-color: gray;
+  grid-column-end: span 2;
+}
