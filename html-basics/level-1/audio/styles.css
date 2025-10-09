@@ -1,0 +1,7 @@
+video::backdrop {
+  background-color: black;
+}
+
+video::cue {
+  color: hotpink;
+}
