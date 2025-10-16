@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  margin: 0;
+}
+
+.interactive {
+  display: flex;
+  flex-direction: column;
+  max-width: 50vw;
+
+  a:link {
+    font-size: 4.2rem;
+  }
+
+  a:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+  }
+
+  button {
+    background-color: blue;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    padding: 2rem 1.8rem;
+    max-width: 25vw;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+  }
+
+  button:active {
+    transform: scale(0.99);
+    background-color: black;
+  }
+
+  button:focus {
+    outline: none;
+  }
+
+  button:focus-visible {
+    outline: 2px dashed blue;
+    outline-offset: 2px;
+    background-color: black;
+  }
+}
+
+.historic {
+  display: flex;
+  flex-direction: column;
+  max-width: 50vw;
+
+  a {
+    font-size: 4.2rem;
+  }
+
+  a:link {
+    color: black;
+  }
+
+  a:visited {
+    color: blue;
+  }
+}
+
+.form {
+  button {
+    background-color: blue;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    padding: 2rem 1.8rem;
+    max-width: 25vw;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+  }
+
+  button:disabled {
+    background-color: rgb(166, 164, 164);
+    cursor: not-allowed;
+  }
+
+  [type="checkbox"]:checked {
+    box-shadow: 0 0 5px 2px green;
+  }
+
+  [type="checkbox"]:indeterminate {
+    box-shadow: 0 0 5px 2px orange;
+  }
+}
+
+.validation {
+  [type="email"] {
+    min-width: 32rem;
+    padding: 0.5rem 1rem;
+    line-height: 1;
+    font: inherit;
+    border: 1px solid blue;
+    border-radius: 0.25rem;
+  }
+
+  [type="email"]:invalid {
+    border: 1px solid red;
+  }
+
+  [type="email"]:valid {
+    border: 1px solid green;
+  }
+}
