@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+html {
+  margin: 0;
+}
+
+main {
+  margin: 0 40vw;
+  font-size: 3.2rem;
+}
+
+div[id] {
+  height: 9.6rem;
+  width: 9.6rem;
+  background-color: bisque;
+  margin-bottom: 10rem;
+}
+
+#anchor {
+  anchor-name: --my-anchor;
+}
+
+#element {
+  position: absolute;
+  position-anchor: --my-anchor;
+  position-area: end;
+}
+
+#ele {
+  position-area: block-end span-inline-end;
+  margin: unset;
+}
+
+article {
+  font-size: 10rem;
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    anchor-scope: --anchor;
+    margin-bottom: 2rem;
+  }
+
+  .anchor {
+    anchor-name: --anchor;
+  }
+
+  .element {
+    background-color: blue;
+    color: white;
+    position: absolute;
+    position-anchor: --anchor;
+    position-area: end;
+  }
+}
